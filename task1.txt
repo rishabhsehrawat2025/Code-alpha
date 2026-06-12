@@ -1,0 +1,37 @@
+#include<stdio.h>
+double addition(double x,double y){
+	printf("Addition of a and y: %lf", x+y);
+}
+double multiplication(double x,double y){
+	printf("Multiplication of x and y: %lf",x*y);
+}
+double division(double x,double y){
+	printf("Division of x and y: %lf",x/y);
+}
+double subtraction(double x,double y){
+	printf("Subtraction of x and y: %lf",x-y);
+}
+int main(){
+	int x,y;
+	printf("Enter the value of x and y : ");
+	scanf("%lf %lf ",&x,&y);
+	int a;
+	scanf("%d",&a);
+	switch(a){
+		case 1:
+			addition(x,y);
+			break;
+		case 2:
+			multiplication(x,y);	
+			break;
+		case 3:
+			division(x,y);
+			break;
+		case 4:
+			subtraction(x,y);
+			break;
+		default:
+			printf("Invalid Command");
+	}
+	return 0;
+}
